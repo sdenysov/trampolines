@@ -28,14 +28,14 @@ nav {
 .nav-menu a {
     display: block;
     height: 40px;
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
     color: #0F4762;
     line-height: 40px;
 }
 
 .nav-menu a:hover {
-    color: #FD3804;
+    color: white;
 }
 
 .nav-menu li:not(:first-child)::before {
@@ -50,21 +50,27 @@ nav {
     margin-top: -3px;
 }
 
-.nav-menu li:first-child {
+.home-icon {
     vertical-align: middle;
-    height: 36px;
+    font-size: 25px;
 }
 
 form {
-    display: inline-block;
-    margin-left: 35%;
+    float: right;
+    margin-top: 8px;
     height: 24px;
     position: relative;
 }
 
+input {
+    height: 22px;
+    width: 250px;
+    border: none;
+}
+
 #search-field {
     color: #52AACE;
-    padding: 2px 25px;
+    padding-left: 25px;
 }
 
 .search-icon {
