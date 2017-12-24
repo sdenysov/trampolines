@@ -29,6 +29,7 @@ nav {
     display: block;
     height: 40px;
     font-size: 18px;
+    font-weight: bold;
     text-decoration: none;
     color: #0F4762;
     line-height: 40px;
@@ -75,7 +76,7 @@ input {
 
 .search-icon {
     position: absolute;
-    left: 7px;
+    left: 5px;
     top: 3px;
     background-color: transparent;
     color: #52AACE;
