@@ -81,3 +81,78 @@ input {
     background-color: transparent;
     color: #52AACE;
 }
+
+#banners {
+    background-color: #e9dbce;
+    padding-top: 10px;
+}
+
+#banners .slider {
+    width: 940px;
+    margin-right: 10px;
+}
+
+#banners .certificates {
+    width: 250px;
+}
+
+#banners .banners-row {
+    font-size: 0;
+    padding-bottom: 10px;
+}
+
+#banners .banners-row a {
+    display: inline-block;
+    width: calc(98% / 3);
+    box-sizing: border-box;
+}
+
+#banners .banners-row a:not(:first-child) {
+    margin-left: 1%;
+}
+
+#banners .banners-row a img {
+    width: 100%
+}
+
+footer {
+    background-color: #2C3D4E;
+    height: 250px;
+    border-top: 8px solid #50ACD4;
+    color: white;
+}
+
+footer .container:first-child {
+    height: 50px;
+    border-bottom: 1px solid white;
+}
+
+footer .container > div {
+    line-height: 50px;
+}
+
+footer .flags {
+    float: right;
+}
+
+footer .flags .active {
+    opacity: .4;
+}
+
+.twitter a{
+    color: white;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.twitter a:nth-child(3) {
+    padding-right: 20px;
+}
+
+footer .flags span {
+    padding-right: 10px;
+}
+
+footer .flags img {
+    vertical-align: middle;
+}
