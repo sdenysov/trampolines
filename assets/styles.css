@@ -112,7 +112,66 @@ input {
 }
 
 #banners .banners-row a img {
-    width: 100%
+    width: 100%;
+}
+
+main {
+    background-color: #e9dbce;
+    height: 2700px;
+}
+
+main .container {
+    background-color: white;
+}
+
+main .content-row {
+    padding: 25px;
+}
+
+main .col-7 {
+    display: inline-block;
+    width: 45%;
+}
+
+main .col-5 {
+    float: right;
+    margin-top: 7%;
+}
+
+main .col-5 img {
+    width: 600px;
+    height: 300px;
+}
+
+main .col-8 {
+    display: inline-block;
+    width: 55%;
+}
+
+main .col-4 {
+    float: right;
+    width: 45%;
+}
+
+main .col-4 img {
+    display: block;
+    float: right;
+}
+
+main h1 {
+    color: #095E85;
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+
+main h2 {
+    color: #6B6B6B;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+main p {
+    line-height: 25px;
 }
 
 footer {
@@ -139,13 +198,13 @@ footer .flags .active {
     opacity: .4;
 }
 
-.twitter a{
+footer .twitter a{
     color: white;
     padding-right: 10px;
     text-decoration: none;
 }
 
-.twitter a:nth-child(3) {
+footer .twitter a:nth-child(3) {
     padding-right: 20px;
 }
 
