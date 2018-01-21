@@ -88,6 +88,139 @@ input {
     color: #52AACE;
 }
 
+#carousel .carusel input {
+    display: none;
+}
+
+#carousel .carusel {
+    width: 1200px;
+    height: 255px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#carousel .carusel span {
+    font-size: 22px;
+    color: #0F4762;
+}
+
+#carousel #arrows label {
+    display: none;
+    opacity: 0.6;
+}
+
+#carousel #arrows label:hover {
+    opacity: 1;
+}
+
+#carousel .inner {
+    width: 500%;
+}
+
+#slide1:checked ~ #arrows label:nth-child(3),
+#slide2:checked ~ #arrows label:nth-child(1),
+#slide3:checked ~ #arrows label:nth-child(2) {
+    width: 0;
+    height: 0;
+    display: block;
+    border: 20px solid transparent;
+    border-right-color: #FD6D26;
+    border-left: 0 #FD6D26;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    cursor: pointer;
+    left: -22px;
+}
+
+#slide1:checked ~ #arrows label:nth-child(2),
+#slide2:checked ~ #arrows label:nth-child(3),
+#slide3:checked ~ #arrows label:nth-child(1) {
+    width: 0;
+    height: 0;
+    display: block;
+    border: 20px solid transparent;
+    border-right: 0 #FD6D26;
+    border-left-color: #FD6D26;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    cursor: pointer;
+    right: -22px;
+}
+
+#carousel #slide1:checked ~ .slides .inner {margin-left: 0}
+#carousel #slide2:checked ~ .slides .inner {margin-left: -200px}
+#carousel #slide3:checked ~ .slides .inner {margin-left: -450px}
+
+#carousel .slides .inner {
+    transition: all 0.8s ease-in-out;
+}
+
+#carousel .slides {
+    overflow: hidden;
+}
+
+#carousel .clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#carousel .trampoline {
+    float: left;
+    background-color: white;
+    box-sizing: border-box;
+    width: 240px;
+    border: 2px solid #FFF;
+    padding: 5px;
+    text-align: center;
+}
+
+#carousel .trampoline:hover {
+    border: 2px solid #47AEBF;
+}
+
+#carousel .trampoline img {
+    width: 100%;
+}
+
+#carousel .trampoline-title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Arial', serif;
+}
+
+#carousel .description {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#carousel .description li {
+    float: left;
+}
+
+#carousel .description li a {
+    display: block;
+    padding: 10px 10px 0 10px;
+    font-size: 23px;
+    text-decoration: none;
+    color: black;
+}
+
+#carousel .description li a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+#carousel .trampoline:hover .description {
+    display: inline-block;
+}
+
 #banners {
     background-color: #e9dbce;
     padding-top: 10px;
