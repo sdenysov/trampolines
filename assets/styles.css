@@ -202,30 +202,23 @@ main .col {
     position: relative;
 }
 
-main .wide-col a .background-link {
-    position: absolute;
+figure.background-link {
+    position: relative;
     overflow: hidden;
-    background-color: #0F4762;
-    width: 100%;
-    height: 99%;
-    margin-top: -69%;
+    margin: 0;
+    font-size: 0;
 }
 
-main .narrow-col a .background-link {
+figure.background-link:hover:after {
+    content: "\f002";
     position: absolute;
-    overflow: hidden;
-    background-color: #0F4762;
-    width: 100%;
-    height: 99%;
-    margin-top: -454px;
-}
-
-main .background-link {
-    opacity: 0;
-}
-
-main a:hover .background-link {
-    opacity: 0.6;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 35px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.4);
 }
 
 footer {
