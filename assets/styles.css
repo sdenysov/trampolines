@@ -12,6 +12,12 @@ nav {
     background-color: #52AACE;
 }
 
+header {
+    height: 291px;
+    background-position-x: 10px;
+    background: url("./images/header-img.jpg") no-repeat;
+}
+
 .clearfix::after {
     content: '';
     display: block;
@@ -150,8 +156,8 @@ input {
 }
 
 #carousel #slide1:checked ~ .slides .inner {margin-left: 0}
-#carousel #slide2:checked ~ .slides .inner {margin-left: -200px}
-#carousel #slide3:checked ~ .slides .inner {margin-left: -450px}
+#carousel #slide2:checked ~ .slides .inner {margin-left: -240px}
+#carousel #slide3:checked ~ .slides .inner {margin-left: -480px}
 
 #carousel .slides .inner {
     transition: all 0.8s ease-in-out;
@@ -232,6 +238,10 @@ input {
 }
 
 #banners .certificates {
+    margin-left: 10px;
+}
+
+#banners .certificates-img {
     width: 250px;
 }
 
@@ -254,8 +264,75 @@ input {
     width: 100%;
 }
 
+#banners .banners-row div {
+    display: inline-block;
+}
+
+#slider input {
+    display: none;
+}
+
+#slider .banner-slider {
+    width: 940px;
+    position: relative;
+}
+
+#slider .radio-buttons {
+    position: absolute;
+    left: 45.8%;
+    bottom: 6px;
+}
+
+#slider .slider-inner {
+    width: 500%;
+}
+
+#slider .radio-buttons label {
+    float: left;
+    display: block;
+    width: 5px;
+    height: 5px;
+    margin: 0 6px 0 0;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#slider #banner1:checked ~ .radio-buttons label:nth-child(1),
+#slider #banner2:checked ~ .radio-buttons label:nth-child(2),
+#slider #banner3:checked ~ .radio-buttons label:nth-child(3),
+#slider #banner4:checked ~ .radio-buttons label:nth-child(4) {
+    background-color: #FD6D26;
+    cursor: pointer;
+}
+
+#slider #banner1:checked ~ .big-banners .slider-inner {margin-left: 0}
+#slider #banner2:checked ~ .big-banners .slider-inner {margin-left: -940px}
+#slider #banner3:checked ~ .big-banners .slider-inner {margin-left: -1880px}
+#slider #banner4:checked ~ .big-banners .slider-inner {margin-left: -2820px}
+
+#slider .big-banners .slider-inner {
+    transition: all 0.8s ease-in-out;
+}
+
+#slider .big-banners {
+    overflow: hidden;
+}
+
+#slider .big-banner {
+    float: left;
+    background-color: white;
+    box-sizing: border-box;
+    width: 940px;
+}
+
+#slider .big-banner img {
+    width: 100%;
+}
+
 main {
     background-color: #e9dbce;
+    padding-bottom: 15px;
 }
 
 main .container {
