@@ -268,26 +268,27 @@ input {
     display: inline-block;
 }
 
-#slider input {
+#banner-slider input {
     display: none;
 }
 
-#slider .banner-slider {
+#banner-slider {
     width: 940px;
     position: relative;
 }
 
-#slider .radio-buttons {
+#banner-slider .radio-buttons {
     position: absolute;
-    left: 45.8%;
+    left: 50%;
     bottom: 6px;
+    margin-left: -40px;
 }
 
-#slider .slider-inner {
+#banner-slider .slider-inner {
     width: 500%;
 }
 
-#slider .radio-buttons label {
+#banner-slider .radio-buttons label {
     float: left;
     display: block;
     width: 5px;
@@ -298,35 +299,35 @@ input {
     background-color: white;
 }
 
-#slider #banner1:checked ~ .radio-buttons label:nth-child(1),
-#slider #banner2:checked ~ .radio-buttons label:nth-child(2),
-#slider #banner3:checked ~ .radio-buttons label:nth-child(3),
-#slider #banner4:checked ~ .radio-buttons label:nth-child(4) {
+#banner-slider #banner1:checked ~ .radio-buttons label:nth-child(1),
+#banner-slider #banner2:checked ~ .radio-buttons label:nth-child(2),
+#banner-slider #banner3:checked ~ .radio-buttons label:nth-child(3),
+#banner-slider #banner4:checked ~ .radio-buttons label:nth-child(4) {
     background-color: #FD6D26;
     cursor: pointer;
 }
 
-#slider #banner1:checked ~ .big-banners .slider-inner {margin-left: 0}
-#slider #banner2:checked ~ .big-banners .slider-inner {margin-left: -940px}
-#slider #banner3:checked ~ .big-banners .slider-inner {margin-left: -1880px}
-#slider #banner4:checked ~ .big-banners .slider-inner {margin-left: -2820px}
+#banner-slider #banner1:checked ~ .big-banners .slider-inner {margin-left: 0}
+#banner-slider #banner2:checked ~ .big-banners .slider-inner {margin-left: -940px}
+#banner-slider #banner3:checked ~ .big-banners .slider-inner {margin-left: -1880px}
+#banner-slider #banner4:checked ~ .big-banners .slider-inner {margin-left: -2820px}
 
-#slider .big-banners .slider-inner {
+#banner-slider .big-banners .slider-inner {
     transition: all 0.8s ease-in-out;
 }
 
-#slider .big-banners {
+#banner-slider .big-banners {
     overflow: hidden;
 }
 
-#slider .big-banner {
+#banner-slider .big-banner {
     float: left;
     background-color: white;
     box-sizing: border-box;
     width: 940px;
 }
 
-#slider .big-banner img {
+#banner-slider .big-banner img {
     width: 100%;
 }
 
